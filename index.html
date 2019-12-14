@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!--<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">-->
+        
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+        
+        <title>Flexbox &mdash; The box that will flex</title>
+    </head>
+    <body>
+        <div class="container">
+            <header class="header">
+                <img src="img/logo-3.png" alt="Alain Surkol" class="logo">
+                <!--
+                <form action="#" class="search">
+                    <input type="text" class="search__input" placeholder="Search hotels">
+                    <button class="search__button">
+                        <svg class="search__icon">
+                            <use xlink:href="img/sprite.svg#icon-magnifying-glass"></use>
+                        </svg>
+                    </button>
+                </form>
+                <nav class="user-nav">
+                    <div class="user-nav__icon-box">
+                        <svg class="user-nav__icon">
+                            <use xlink:href="img/sprite.svg#icon-bookmark"></use>
+                        </svg>
+                        <span class="user-nav__notificatoin">7</span>
+                    </div>
+                    <div class="user-nav__icon-box">
+                        <svg class="user-nav__icon">
+                            <use xlink:href="img/sprite.svg#icon-chat"></use>
+                        </svg>
+                        <span class="user-nav__notificatoin">13</span>
+                    </div>
+                    <div class="user-nav__user">
+                        <img src="img/owner.jpg" alt="Owner photo" class="user-nav__user-photo">
+                        <span class="user-nav__user-name">Alina</span>
+                    </div>
+                </nav>
+                -->
+            </header>
+            
+            
+            <div class="content">
+                <nav class="sidebar">
+                    <ul class="side-nav">
+                        <li class="side-nav__item">
+                            <a href="#" class="side-nav__link">
+                                <svg class="side-nav__icon">
+                                    <use xlink:href="img/sprite.svg#icon-user"></use>
+                                </svg>
+                                <span>About me</span>
+                            </a>
+                        </li>
+                        <li class="side-nav__item">
+                            <a href="#" class="side-nav__link">
+                                <svg class="side-nav__icon">
+                                    <use xlink:href="img/sprite.svg#icon-slideshare"></use>
+                                </svg>
+                                <span>About B2B</span>
+                            </a>
+                        </li>
+                        <li class="side-nav__item">
+                            <a href="#" class="side-nav__link">
+                                <svg class="side-nav__icon">
+                                    <use xlink:href="img/sprite.svg#icon-light-bulb"></use>
+                                </svg>
+                                <span>Trainings</span>
+                            </a>
+                        </li>
+                        <li class="side-nav__item">
+                            <a href="#" class="side-nav__link">
+                                <svg class="side-nav__icon">
+                                    <use xlink:href="img/sprite.svg#icon-bookmark"></use>
+                                </svg>
+                                <span>References</span>
+                            </a>
+                        </li>
+                        <!--
+                        <li class="side-nav__item">
+                            <a href="#" class="side-nav__link">
+                                <svg class="side-nav__icon">
+                                    <use xlink:href="img/sprite.svg#icon-megaphone"></use>
+                                </svg>
+                                <span>Articles</span>
+                            </a>
+                        </li>
+                        -->
+                        <li class="side-nav__item">
+                            <a href="#" class="side-nav__link">
+                                <svg class="side-nav__icon">
+                                    <use xlink:href="img/sprite.svg#icon-email"></use>
+                                </svg>
+                                <span>Contact</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="legal">
+                        &copy; 2020 by X&M. All rights reserved.
+                    </div>
+                </nav>
+                
+                
+                
+                <main class="hotel-view">
+                    <div class="gallery">
+                        <figure class="gallery__item">
+                            <img src="img/surkol-5.jpg" alt="Photo of Group 1" class="gallery__photo">
+                            <!--<figcaption>Alain teaching at bpost</figcaption>-->
+                        </figure>
+                        
+                        <figure class="gallery__item">
+                            <img src="img/surkol-3.jpg" alt="Photo of Group 2" class="gallery__photo">
+                            <!--<figcaption>Lorum ipsum</figcaption>-->
+                        </figure>
+                        
+                        <figure class="gallery__item">
+                            <img src="img/surkol-4.jpg" alt="Photo of Group 3" class="gallery__photo">
+                            <!--<figcaption>Lorum ipsum</figcaption>-->
+                        </figure>
+                    </div>
+                    
+                    <div class="overview">
+                        <h1 class="overview__heading">
+                            Alain Surkol Coaching
+                        </h1>
+                        <!--
+                        <div class="overview__stars">
+                            <svg class="overview__icon-star">
+                                <use xlink:href="img/sprite.svg#icon-star"></use>
+                            </svg>
+                            <svg class="overview__icon-star">
+                                <use xlink:href="img/sprite.svg#icon-star"></use>
+                            </svg>
+                            <svg class="overview__icon-star">
+                                <use xlink:href="img/sprite.svg#icon-star"></use>
+                            </svg>
+                            <svg class="overview__icon-star">
+                                <use xlink:href="img/sprite.svg#icon-star"></use>
+                            </svg>
+                            <svg class="overview__icon-star">
+                                <use xlink:href="img/sprite.svg#icon-star"></use>
+                            </svg>
+                        </div>
+                        -->
+                        <div class="overview__media">
+                            <svg class="overview__icon-media">
+                                <use xlink:href="img/sprite.svg#icon-linkedin"></use>
+                            </svg>
+                            <svg class="overview__icon-media">
+                                <use xlink:href="img/sprite.svg#icon-instagram"></use>
+                            </svg>
+                            <!--<button class="btn-inline">Belgium</button>-->
+                        </div>
+                        <div class="overview__experience">
+                            <div class="overview__experience-working">14 years experience</div>
+                            <div class="overview__experience-sessions">+100 Sessions given</div>
+                        </div>
+                    </div>
+                    
+                    <div class="detail">
+                        <div class="description">
+                            <h2>About Me</h2>
+                            <p class="paragraph">
+                                We all want change, but we constantly tend to fall into our old habits. Are you looking for someone who can give that little push so that you and your co-workers will effectively support change? Then you’ve come to the right place. I am ready to guide you, with humour, creativity and lots of passion for cultural change.
+                            </p>
+                            
+                            
+                            <p class="paragraph">
+                                For 24 years I’ve been working for bpost, a company acting in constantly changing market conditions. Today, I am Head of Sales Excellence and one of the driving forces behind an internal leadership program aimed at improving our corporate culture. I recently decided to go one step further and explore new horizons, where I can bring some help and support to make the change happen …
+                            </p>
+                        </div>
+                        
+                        <div class="ownerportrait">
+                            <img src="img/owner-portrait-4.jpg" alt="Alain Surkol Portrait" class="ownerportrait__photo"> 
+                        </div>
+                    </div>
+                    <!--
+                    <div class="aboutb2b">
+                        <div class="user-reviews">
+                            User Reviews
+                        </div>
+                    </div>
+                    -->
+                </main>
+                
+            </div>
+        </div>
+        
+        <div class="contact">
+            <div class="contact__information">
+                <h2>About B2B</h2>
+                <p class="paragraph">
+                    B2B (better2best) provides trainings, workshops and lectures inspiring your team, your company or your audience to do better every day so that they can become the best in the long run.
+                </p>
+                <p class="paragraph">
+                    We combine different modules (see “modules”) to an interesting story. This story is brought to you either as a training or as a lecture/keynote.
+                    The concepts that are covered in each of the modules are easy to understand, practical and ready to use, whatever you position, whatever your sector. Moreover, the new insights are not only applicable at work but are also of use in your private life.
+                </p>
+                <p class="paragraph">
+                    If you opt for a training, together we select the modules and their related concepts. You should plan 30’ min. to 90’ max. per module. Each of the modules can be extended with a workshop on “how to deal with the learnings in practice”. Add min. 15’ to max. 30’ per workshop. Comparing it to a journey we will undertake, this arrangement can be booked from upwards of 10 participants and can last as long as you want.
+                </p>
+            </div>
+        </div>
+        
+        <div class="ctacontainer">
+            <div class="cta">
+                <h2 class="cta__book-now">
+                    Good news! We have the right trainings for all your needs!
+                </h2>
+                <button class="btn">
+                    <span class="btn__visible">Contact Us</span>
+                    <span class="btn__invisible">Let's take the lead!</span>
+                </button>
+            </div>
+        </div>
+        
+        <div class="trainings">
+            <div class="trainings__information-1">
+                <h2>Trainings</h2>
+                <h3>Me</h3>
+                <p class="paragraph">
+                    Before we take off on our journey, we first look into the mirror and discover the modules that are directly linked with the individual. We ask ourselves the following questions: What makes me tick? Why am I who I am? Why do I behave in a certain way? Why do I have my own outlook on things? What are my habits? How do I discover new insights?
+                </p>
+                <ul class="trainingslist">
+                    <li class="trainingslist__item">MOOD – Why did everything work out yesterday, but no longer today? Are you aware of the impact of your mood?</li>
+                    <li class="trainingslist__item">ENERGY – How does one arouse that spark of team-spirit? How to create positive energy among others? Did you know that the key is your own energy level?</li>
+                    <li class="trainingslist__item">WIN-WIN – Does someone else always have to lose so that you can win? Not all the time. What other alternatives are there?</li>
+                    <li class="trainingslist__item">FILTERS – Why does my colleague see things differently? Maybe he or she creates her own reality? Or maybe it’s you?</li>
+                    <li class="trainingslist__item">FOCUS – Why aren’t you as effective or creative as you would like to be? Perhaps it’s because you get easily distracted?</li>
+                </ul>
+                
+
+            </div>
+            <div class="trainings__information-2">
+                <h2>&nbsp</h2>
+                <h3>You and I</h3>
+                <p class="paragraph">
+                    During this journey we engage to interact and discover what type of behaviour is helpful. We explore our surroundings and are open to new encounters. We discover the modules that focus on the interaction between two individuals.
+                </p>
+                
+                <ul class="trainingslist">
+                    <li class="trainingslist__item">CURIOSITY - How to adopt a curious attitude? Did you know that curiosity is the key to new innovative thinking and ideas?</li>
+                    <li class="trainingslist__item">FEEDBACK – People want feedback about how they are doing and what they can improve. But how do you handle that? How to best motivate others?</li>
+                    <li class="trainingslist__item">ROLE MODEL – How do we influence the people that surround us? Are you modelling the behaviour you promote? And does this translate itself in your actions?</li>
+                    <li class="trainingslist__item">LISTENING – You think you are a good listener? Perhaps, some of your co-workers say otherwise?</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="trainings">
+            <div class="trainings__information-1">
+                <h2>&nbsp</h2>
+                <h3>We</h3>
+                <p class="paragraph">
+                    We discover the wide world and get acquainted with the modules that facilitate collaboration in a team and that can be applied in whatever organization, company or association.
+                </p>
+                
+                <ul class="trainingslist">
+                    <li class="trainingslist__item">BEHAVIOUR STYLES – How to adapt to your interlocutor? Are you speaking the language that suits your partner?</li>
+                    <li class="trainingslist__item">ACCOUNTABILITY – How can you make the difference? How to initiate and encourage empowerment?</li>
+                    <li class="trainingslist__item">PRIORITIES – Are you spending your time well? Do you take time to decide what is really important?</li>
+                </ul>
+                
+                <!--
+                <p class="paragraph">
+                    BEHAVIOUR STYLES – How to adapt to your interlocutor? Are you speaking the language that suits your partner?
+                    ACCOUNTABILITY – How can you make the difference? How to initiate and encourage empowerment?
+                    PRIORITIES – Are you spending your time well? Do you take time to decide what is really important?
+                </p>
+                -->
+                
+            </div>
+            <div class="trainings__information-3">
+                <h2>&nbsp</h2>
+                <h3>À la carte <span class="bestseller">Recommended</span></h3>
+                <p class="paragraph-alacarte">
+                    If you opt for a journey à la carte, you select a number of modules that are combined into a fluent coherent storyline.
+                </p>
+                
+                <div class="carousel">
+                    <div class="composition">
+                        <img src="img/surkol-1-large.jpg" alt="Group 1" class="composition__photo composition__photo--p1">
+                        <img src="img/surkol-2-large.jpg" alt="Group 2" class="composition__photo composition__photo--p2">
+                        <img src="img/surkol-1-large.jpg" alt="Group 1" class="composition__photo composition__photo--p3">
+                    </div>
+                </div>
+                <!--
+                <p class="paragraph">
+                    <img src="img/logo-b2b.png" alt="B2B Logo" class="B2B-logo">
+                </p>
+                -->
+            </div>
+        </div>
+        
+        <!--
+        <div class="references">
+            <div class="references__information">
+                <h2>References</h2>
+                <p class="paragraph">
+                    B2B (better2best) provides trainings, workshops and lectures inspiring your team, your company or your audience to do better every day so that they can become the best in the long run.
+                </p>
+                <p class="paragraph">
+                    We combine different modules (see “modules”) to an interesting story. This story is brought to you either as a training or as a lecture/keynote.
+                    The concepts that are covered in each of the modules are easy to understand, practical and ready to use, whatever you position, whatever your sector. Moreover, the new insights are not only applicable at work but are also of use in your private life.
+                </p>
+                <p class="paragraph">
+                    If you opt for a training, together we select the modules and their related concepts. You should plan 30’ min. to 90’ max. per module. Each of the modules can be extended with a workshop on “how to deal with the learnings in practice”. Add min. 15’ to max. 30’ per workshop. Comparing it to a journey we will undertake, this arrangement can be booked from upwards of 10 participants and can last as long as you want.
+                </p>
+            </div>
+        </div>
+        -->
+        <div class="referenties__container">
+            <!--<div class="referenties">-->
+                <div class="referenties__links">
+                    <h2>References</h2>
+                    <p class="paragraph">
+                        Since 2017 new employees encounter <b>leading@bpost</b> for the first time a couple of months after their recruiment. The experience is always somewhat comparable: they all participate with enthousiasm, leave the session with new insights and happily express their positive impression. Regularly we receive the feedback “one of the best trainings ever!”. The experience that b2b offers is quite comparable…
+                    </p>
+                    <p class="paragraph">
+                        In 2019 the <b>construction company Cordeel</b> organized a safety-day for its personnel. 400 employees, divided over several groups took part and participated to different modules. B2B accounted for one particular module on customer centricity (How to turn your customer into a fan). As the day went by and the insights grew, most of the employees became a fan of B2B too…
+                    </p>
+                    <!--
+                    <ul class="list">
+                        <li class="list__item">Close to the beach</li>
+                        <li class="list__item">Breakfast included</li>
+                        <li class="list__item">Free airport shuttle</li>
+                        <li class="list__item">Free wifi in all rooms</li>
+                        <li class="list__item">Air conditioning and heating</li>
+                        <li class="list__item">Pets allowed</li>
+                        <li class="list__item">We speak all languages</li>
+                        <li class="list__item">Perfect for families</li>
+                    </ul>
+                    <div class="recommend">
+                        <p class="recommend__count">
+                            Lucy and 3 other friends recommend B2B.
+                        </p>
+                        <div class="recommend__friends">
+                            <img src="img/user-3.jpg" alt="Friend 1" class="recommend__photo">
+                            <img src="img/user-4.jpg" alt="Friend 2" class="recommend__photo">
+                            <img src="img/user-5.jpg" alt="Friend 3" class="recommend__photo">
+                            <img src="img/user-6.jpg" alt="Friend 4" class="recommend__photo">
+                        </div>
+                    </div>
+                    -->
+                </div>
+                <div class="referenties__rechts">
+                    <figure class="review">
+                        <blockquote class="review__text">
+                            Super group dynamic during the session. Alain is a superb facilitator and coach.
+                        </blockquote>
+                        <figcaption class="review__user">
+                            <img src="img/logo-bpost.jpeg" alt="Attendant 1" class="review__photo">
+                            <div class="review_user-box">
+                                <div class="p review__user-name">bpost employee</div>
+                            </div>
+                        </figcaption>
+                    </figure>
+                    <figure class="review">
+                        <blockquote class="review__text">
+                            Alain coached over 400 attendants with great passion and made sure everybode was included during the different sessions.
+                        </blockquote>
+                        <figcaption class="review__user">
+                            <img src="img/logo-cordeel.png" alt="Attendant 2" class="review__photo">
+                            <div class="review_user-box">
+                                <div class="p review__user-name">Cordeel employee</div>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </div>
+            <!--</div>-->
+        </div>
+
+        <footer class="footer">
+            <div class="footer__logo-box">
+                <img src="img/logo-b2b.png" alt="Full logo" class="footer__logo">
+            </div>
+            <div class="footer__columns">
+                <div class="footerleft">
+                    <div class="footerleft__navigation">
+                        <ul class="footer__list">
+                            <li class="footer__item"><a href="#" class="footer__link">About me</a></li>
+                            <li class="footer__item"><a href="#" class="footer__link">About B2B</a></li>
+                            <li class="footer__item"><a href="#" class="footer__link">Trainings</a></li>
+                            <li class="footer__item"><a href="#" class="footer__link">References</a></li>
+                            <li class="footer__item"><a href="#" class="footer__link">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footerright">
+                   <p class="footer_copyright">
+                       Built by <a href="#" class="footer__link">X&M</a> for Alain's B2B course program <a href="#" class="footer__link">I, You and I and We</a>. Copyright &copy; by X&M. Alain is the original author, all rights reserved.
+                   </p>
+                </div>
+            </div>
+ 
+        </footer>
+    </body>
+</html>
+
+
+
+
+
+
+
+

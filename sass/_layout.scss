@@ -1,0 +1,278 @@
+.container {
+    max-width: 120rem;
+    margin: 8rem auto 0 auto;
+    background-color: var(--color-grey-light-1);
+    box-shadow: var(--shadow-dark);
+    
+    min-height: 50rem;
+}
+
+.header {
+    height: 7rem;
+    background-color: var(--color-grey-dark-1);
+    border-bottom: var(--line);
+    //Centering the logo in the middle of the header.
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    display: flex;
+}
+
+.sidebar {
+    background-color: var(--color-grey-dark-1);
+    flex: 0 0 18%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hotel-view {
+    background-color: #fff;
+    flex: 1;
+    
+    //For testing purposes:
+    //background-color: orangered;
+    //height: 60rem;
+}
+
+//////////////////////////////////
+// ABOUT ME CONTAINER
+
+
+.detail {
+    display: flex;
+    padding: 4.5rem;
+    background-color: var(--color-grey-light-1);
+    border-bottom: var(--line);
+}
+
+.description {
+    font-size: 1.4rem;
+    background-color: #fff;
+    box-shadow: var(--shadow-light);
+    padding: 3rem;
+    flex: 0 0 60%;
+    margin-right: 4.5rem;
+}
+
+.ownerportrait {
+    //background-color: yellowgreen;
+    flex: 1;
+}
+
+.ownerportrait__photo {
+    box-sizing: content-box;
+}
+
+.aboutb2b {
+    //The same basic setup as the detail element
+}
+
+.user-reviews {
+    height: 10rem;
+    //background-color: yellowgreen;
+}
+
+
+//////////////////////////////////
+// ABOUT B2B CONTAINER
+
+
+.contact {
+    max-width: 107.5rem;
+    margin: 3px auto;
+    display: flex;
+    justify-content: center;
+    padding: 2.5rem;
+    background-color: var(--color-grey-light-1);
+    
+    //min-height: 50rem; 
+}
+
+.contact__information {
+    font-size: 1.4rem;
+    background-color: #fff;
+    box-shadow: var(--shadow-light);
+    padding: 3rem;
+    margin: 2.5rem 2.5rem;
+    flex: 0 0 60%;
+}
+
+//////////////////////////////////
+// TRAININGS CONTAINER
+
+
+.trainings {
+    max-width: 107.5rem;
+    margin: 3px auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 2.5rem;
+    background-color: var(--color-primary-light);
+    
+    //min-height: 50rem; 
+}
+
+.trainings__information-1 {
+    font-size: 1.4rem;
+    background-color: #fff;
+    box-shadow: var(--shadow-light);
+    padding: 3rem;
+    margin: 2.5rem 2.5rem;
+    flex: 0 0 47%;
+}
+
+.trainings__information-2 {
+    font-size: 1.4rem;
+    background-color: #fff;
+    box-shadow: var(--shadow-light);
+    padding: 3rem;
+    margin: 2.5rem 2.5rem 2.5rem 0;
+    flex: 0 0 47%;
+}
+
+.trainings__information-3 {
+    font-size: 1.4rem;
+    background-color: #fff;
+    box-shadow: var(--shadow-light);
+    padding: 3rem;
+    margin: 2.5rem 2.5rem 2.5rem 0;
+    flex: 0 0 47%;
+    min-height: 50rem;
+}
+
+
+//////////////////////////////////
+// REFERENCES CONTAINER
+
+
+.references {
+    max-width: 107.5rem;
+    margin: 3px auto;
+    display: flex;
+    justify-content: center;
+    padding: 2.5rem;
+    background-color: var(--color-grey-light-1);
+    
+    //min-height: 50rem; 
+}
+
+.references__information {
+    font-size: 1.4rem;
+    background-color: #fff;
+    box-shadow: var(--shadow-light);
+    padding: 3rem;
+    margin: 2.5rem 2.5rem;
+    flex: 0 0 60%;
+}
+
+//////////////////////////////////
+// REFERENTIES CONTAINER
+.referenties__container {
+    font-size: 1.4rem;
+    max-width: 107.5rem;
+    margin: 3px auto;
+    padding: 4.5rem;
+    display: flex;
+    background-color: var(--color-grey-light-1);
+    border-bottom: var(--line);
+    //min-height: 50rem; 
+}
+
+//.referenties {
+//    display: flex;
+//}
+
+.referenties__links {
+    background-color: #fff;
+    box-shadow: var(--shadow-light);
+    padding: 3rem;
+    flex: 0 0 60%;
+    margin-right: 4.5rem;
+    //height: 40rem;
+}
+
+.referenties__rechts {
+    //background-color: yellowgreen;
+    flex: 1;
+}
+
+//////////////////////////////////
+// FOOTER
+
+.footer {
+    max-width: 120rem;
+    margin: 3px auto;
+    background-color: var(--color-grey-light-2);
+    box-shadow: 0 2rem 6rem rgba(0,0,0,.3);
+    //display: flex;
+    //min-height: 25rem;
+    
+    &__logo-box {
+        //display: flex;
+        //justify-content: center;
+        //width: 15rem;
+        //height: auto;
+        text-align: center;
+        
+    }
+    
+    &__logo {
+        width: 17rem;
+        height: auto;
+    }
+    
+   
+}
+
+.footer__columns {
+    display: flex;
+}
+
+.footerleft {
+    background-color: orangered;
+    padding: 3rem;
+
+    flex: 0 0 50%;
+}
+
+.footer__list {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.footer__item {
+    margin-right: 2rem;
+    margin-left: 2rem;
+}
+
+.footer__link {
+    text-decoration: none;
+    color: var(--color-primary);
+}
+
+.footerright {
+    background-color: yellowgreen;
+    padding: 3rem;
+    flex: 1;
+}
+
+//////////////////////////////////
+// CTA CONTAINTER
+
+.ctacontainer {
+    max-width: 107.5rem;
+    margin: 3px auto;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    background-color: var(--color-grey-light-1);
+    
+    //min-height: 50rem; 
+}
